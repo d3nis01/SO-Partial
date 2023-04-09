@@ -12,6 +12,7 @@ do
     if file "$fisier" | grep -q "Bourne-Again shell script"
     then
         # echo $(file $fisier)
+        chmod +x "$fisier"
         echo "$fisier"
     fi
 done
